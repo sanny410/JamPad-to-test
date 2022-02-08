@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400&display=swap');
+
+
+.welcome_panel {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  .welcome-join {
+    font-family: Yantramanav;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 48px 56px 0 56px;
+    height: 100%;
+    background: #FED614;
+    border-radius: 0 32px 0 0;
+    color: #383838;
+    box-sizing: border-box;
+
+    #logo {
+      height: 48px;
+      width: 34px;
+      margin-bottom: 150px;
+    }
+
+    .welcome-title {
+      font-size: 24px;
+      line-height: 16px;
+      order: 0;
+      margin: 32px 10px;
+    }
+
+    .about-jampad {
+      font-size: 18px;
+      line-height: 23px;
+      margin: 20px 10px;
+    }
+
+    .go-join {
+      font-size: 14px;
+      line-height: 16px;
+      margin: 0px 10px;
+    }
+
+    .btn-join {
+      width: 100%;
+      max-height: 36px;
+      background-color: #383838;
+      border-radius: 8px;
+      order: 2;
+      margin: 32px 0px;
+      padding: 10px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #FFFFFF;
+
+    }
+  }
+}
