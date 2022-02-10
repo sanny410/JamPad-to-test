@@ -5,6 +5,89 @@
   display: grid;
   grid-template-columns: 30% 70%;
 }
+.welcome_panel .authorization-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome_panel .authorization-form .form-login {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+.welcome_panel .authorization-form .form-login .login-title {
+  font-family: Yantramanav;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 16px;
+  color: #383838;
+  flex: none;
+  margin: 32px 0;
+}
+.welcome_panel .authorization-form .form-login label {
+  font-size: 10px;
+  line-height: 16px;
+  color: rgba(56, 56, 56, 0.4);
+  margin: 4px 0;
+}
+.welcome_panel .authorization-form .form-login input {
+  border: none;
+  margin-bottom: 5px;
+}
+.welcome_panel .authorization-form .form-login input, .welcome_panel .authorization-form .form-login textarea {
+  outline: none;
+}
+.welcome_panel .authorization-form .form-login input:active, .welcome_panel .authorization-form .form-login textarea:active {
+  outline: none;
+}
+.welcome_panel .authorization-form .form-login :focus {
+  outline: none;
+}
+.welcome_panel .authorization-form .form-login textarea {
+  resize: none;
+}
+.welcome_panel .authorization-form .form-login textarea {
+  resize: vertical;
+}
+.welcome_panel .authorization-form .form-login textarea {
+  resize: horizontal;
+}
+.welcome_panel .authorization-form .form-login input[type=email]::placeholder,
+.welcome_panel .authorization-form .form-login input[type=password]::placeholder {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(56, 56, 56, 0.4);
+  margin: 4px 0;
+}
+.welcome_panel .authorization-form .form-login .line {
+  margin-bottom: 25px;
+}
+.welcome_panel .authorization-form .form-login #submit-authorization-form {
+  width: 100%;
+  height: 36px;
+  background: #FED614;
+  border-radius: 8px;
+  margin: 32px 0;
+  color: black;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+}
+.welcome_panel .authorization-form .form-login .input-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.welcome_panel .authorization-form .form-login .icon {
+  height: 16px;
+  width: 20px;
+  padding-bottom: 10px;
+  color: #383838;
+}
 .welcome_panel .welcome-join {
   font-family: Yantramanav;
   display: flex;
