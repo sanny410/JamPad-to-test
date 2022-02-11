@@ -20,7 +20,7 @@
   position: relative;
 }
 .welcome_panel .authorization-form .form-login .login-title {
-  font-family: Yantramanav;
+  font-family: Yantramanav, serif;
   font-style: normal;
   font-size: 24px;
   line-height: 16px;

@@ -1,0 +1,353 @@
+p {
+  margin: 0;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+.funnel-main {
+  width: 100%;
+  max-height: 1080px;
+  display: grid;
+  grid-template-rows: 95px auto;
+  font-family: Yantramanav, serif;
+}
+.funnel-main .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 56px;
+  box-sizing: border-box;
+}
+.funnel-main .header #logo {
+  width: 128px;
+  height: 24px;
+}
+.funnel-main .header .menu {
+  display: flex;
+  justify-content: space-between;
+}
+.funnel-main .header .menu a {
+  text-decoration: none;
+}
+.funnel-main .header .menu a .menu-item {
+  list-style: none;
+  margin-right: 20px;
+  font-family: Yantramanav, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #383838;
+}
+.funnel-main .header .name-of-user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.funnel-main .score {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 16px;
+  color: #383838;
+  margin-bottom: 4px;
+}
+.funnel-main .state {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: justify;
+  color: #383838;
+  opacity: 0.7;
+}
+
+.funnel-main-page {
+  padding: 0 56px 56px 56px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.funnel-main-page .funnel-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 16px;
+  color: #383838;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.funnel-main-page .funnel-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(56, 56, 56, 0.4);
+}
+
+.funnel-information {
+  display: grid;
+  grid-template-rows: 55% 55%;
+  row-gap: 20px;
+  box-sizing: border-box;
+}
+.funnel-information .funnel-progress-statistics {
+  width: 100%;
+  max-height: 272px;
+  display: grid;
+  grid-template-columns: 65% 45%;
+  grid-gap: 40px;
+  margin-bottom: 40px;
+}
+.funnel-information .funnel-progress-statistics .current-stage-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.funnel-information .funnel-progress-statistics #graph {
+  width: 100%;
+}
+.funnel-information .funnel-progress-statistics .current-stage {
+  width: 100%;
+}
+.funnel-information .funnel-progress-statistics .current-stage-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 178px;
+  max-height: 72px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(56, 56, 56, 0.15);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 25px;
+  padding: 18px;
+}
+.funnel-information .funnel-progress-statistics .current-stage-item img {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.funnel-information .funnel-progress-statistics .current-stage-item .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 18px;
+}
+.funnel-information .leaderboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.funnel-information .leaderboard a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #383838;
+  opacity: 0.5;
+  margin: 0 16px;
+}
+.funnel-information .leaderboard .leaderboard-rate {
+  width: 100%;
+  display: grid;
+  grid-gap: 40px;
+  flex-direction: row;
+  grid-template-columns: 55% 45%;
+}
+.funnel-information .leaderboard .leaderboard-rate .leader-card {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: -1px 2px 8px rgba(56, 56, 56, 0.15);
+  border-radius: 8px;
+  margin: 0 12px;
+  padding: 10px;
+}
+.funnel-information .leaderboard .leaderboard-rate .leader-card .score {
+  font-family: Verdana, serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+}
+.funnel-information .leaderboard .leaderboard-rate .leader-card p {
+  margin: 0;
+}
+.funnel-information .leaderboard .leaderboard-rate .leader-card .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.funnel-information .leaderboard .leaderboard-rate .not-leader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.funnel-information .leaderboard .leaderboard-rate .not-leader .notLeader-card {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 16px;
+}
+.funnel-information .leaderboard .leaderboard-rate .not-leader .notLeader-card .notLeader-card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.funnel-information .leader-employees {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vacancies .vacancy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px 40px 24px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(56, 56, 56, 0.15);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.vacancies .vacancy .vacancy-column {
+  display: flex;
+  flex-direction: column;
+  color: rgba(56, 56, 56, 0.4);
+}
+.vacancies .vacancy .vacancy-column .vacancy-status, .vacancies .vacancy .vacancy-column .name-step {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0;
+}
+.vacancies .buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 28px;
+}
+.vacancies .buttons #btn-edit-funnel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #FED614;
+  border-radius: 8px;
+  color: #383838;
+  border: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+.vacancies .buttons #btn-download-report {
+  font-size: 14px;
+  line-height: 16px;
+  color: #383838;
+  border: none;
+  background-color: #FFFFFF;
+}
+.vacancies .open-vacancies {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.vacancies .open-vacancies .open-vacancies-title {
+  display: grid;
+  grid-template-columns: 50% 40% 10%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.vacancies .open-vacancies .open-vacancies-title input {
+  border: none;
+}
+.vacancies .open-vacancies .open-vacancies-title input, .vacancies .open-vacancies .open-vacancies-title textarea {
+  outline: none;
+}
+.vacancies .open-vacancies .open-vacancies-title input:active, .vacancies .open-vacancies .open-vacancies-title textarea:active {
+  outline: none;
+}
+.vacancies .open-vacancies .open-vacancies-title :focus {
+  outline: none;
+}
+.vacancies .open-vacancies .open-vacancies-title textarea {
+  resize: none;
+}
+.vacancies .open-vacancies .open-vacancies-title textarea {
+  resize: vertical;
+}
+.vacancies .open-vacancies .open-vacancies-title textarea {
+  resize: horizontal;
+}
+.vacancies .open-vacancies .open-vacancies-title input[type=email]::placeholder,
+.vacancies .open-vacancies .open-vacancies-title input[type=password]::placeholder {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(56, 56, 56, 0.4);
+  margin: 4px 0;
+}
+.vacancies .open-vacancies .open-vacancies-title #icon-lupa {
+  width: 15px;
+  height: 15px;
+}
+.vacancies .open-vacancies .vacancy-list-card {
+  height: 48px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(56, 56, 56, 0.15);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.vacancies .open-vacancies .vacancy-list-card .vacancy-open-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vacancies .open-vacancies .vacancy-list-card .vacancy-open-info .vacancy-name {
+  font-size: 14px;
+  line-height: 16px;
+  color: #383838;
+}
+.vacancies .open-vacancies .vacancy-list-card .vacancy-open-info .vacancy-step {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(56, 56, 56, 0.4);
+}
+.vacancies .open-vacancies .vacancy-list-card .icon-arrow-left {
+  padding-left: 10px;
+  display: block;
+}
+.vacancies .open-vacancies #btn-new-vacancy {
+  width: 100%;
+  height: 36px;
+  background: #FED614;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #383838;
+  border: none;
+  margin-tip: 20px;
+}
+
+/*# sourceMappingURL=funnel.css.map */
