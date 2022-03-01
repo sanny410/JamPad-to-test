@@ -6,14 +6,7 @@ h2, h3 {
   margin: 0;
 }
 
-.funnel-main {
-  width: 100%;
-  max-height: 1080px;
-  display: grid;
-  grid-template-rows: 95px auto;
-  font-family: Yantramanav, serif;
-}
-.funnel-main .header {
+.header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -21,18 +14,18 @@ h2, h3 {
   padding: 0 56px;
   box-sizing: border-box;
 }
-.funnel-main .header #logo {
+.header #logo {
   width: 128px;
   height: 24px;
 }
-.funnel-main .header .menu {
+.header .menu {
   display: flex;
   justify-content: space-between;
 }
-.funnel-main .header .menu a {
+.header .menu a {
   text-decoration: none;
 }
-.funnel-main .header .menu a .menu-item {
+.header .menu a .menu-item {
   list-style: none;
   margin-right: 20px;
   font-family: Yantramanav, serif;
@@ -43,10 +36,75 @@ h2, h3 {
   text-align: left;
   color: #383838;
 }
-.funnel-main .header .name-of-user {
+.header .name-of-user {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.open-vacancies-title {
+  display: grid;
+  grid-template-columns: 50% 40% 10%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.open-vacancies-title input {
+  border: none;
+}
+.open-vacancies-title input, .open-vacancies-title textarea {
+  outline: none;
+}
+.open-vacancies-title input:active, .open-vacancies-title textarea:active {
+  outline: none;
+}
+.open-vacancies-title :focus {
+  outline: none;
+}
+.open-vacancies-title textarea {
+  resize: none;
+}
+.open-vacancies-title textarea {
+  resize: vertical;
+}
+.open-vacancies-title textarea {
+  resize: horizontal;
+}
+.open-vacancies-title input[type=email]::placeholder,
+.open-vacancies-title input[type=password]::placeholder {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(56, 56, 56, 0.4);
+  margin: 4px 0;
+}
+.open-vacancies-title #icon-lupa {
+  width: 15px;
+  height: 15px;
+}
+
+.funnel-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 16px;
+  color: #383838;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.funnel-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(56, 56, 56, 0.4);
+}
+
+.funnel-main {
+  width: 100%;
+  max-height: 1080px;
+  display: grid;
+  grid-template-rows: 95px auto;
+  font-family: Yantramanav, serif;
 }
 .funnel-main .score {
   font-style: normal;
@@ -70,22 +128,6 @@ h2, h3 {
   padding: 0 56px 56px 56px;
   display: grid;
   grid-template-columns: 75% 25%;
-}
-.funnel-main-page .funnel-title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 16px;
-  color: #383838;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.funnel-main-page .funnel-subtitle {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: rgba(56, 56, 56, 0.4);
 }
 
 .funnel-information {
@@ -271,44 +313,6 @@ h2, h3 {
   display: flex;
   flex-direction: column;
 }
-.vacancies .open-vacancies .open-vacancies-title {
-  display: grid;
-  grid-template-columns: 50% 40% 10%;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.vacancies .open-vacancies .open-vacancies-title input {
-  border: none;
-}
-.vacancies .open-vacancies .open-vacancies-title input, .vacancies .open-vacancies .open-vacancies-title textarea {
-  outline: none;
-}
-.vacancies .open-vacancies .open-vacancies-title input:active, .vacancies .open-vacancies .open-vacancies-title textarea:active {
-  outline: none;
-}
-.vacancies .open-vacancies .open-vacancies-title :focus {
-  outline: none;
-}
-.vacancies .open-vacancies .open-vacancies-title textarea {
-  resize: none;
-}
-.vacancies .open-vacancies .open-vacancies-title textarea {
-  resize: vertical;
-}
-.vacancies .open-vacancies .open-vacancies-title textarea {
-  resize: horizontal;
-}
-.vacancies .open-vacancies .open-vacancies-title input[type=email]::placeholder,
-.vacancies .open-vacancies .open-vacancies-title input[type=password]::placeholder {
-  font-size: 12px;
-  line-height: 16px;
-  color: rgba(56, 56, 56, 0.4);
-  margin: 4px 0;
-}
-.vacancies .open-vacancies .open-vacancies-title #icon-lupa {
-  width: 15px;
-  height: 15px;
-}
 .vacancies .open-vacancies .vacancy-list-card {
   height: 48px;
   background: #FFFFFF;
@@ -347,7 +351,7 @@ h2, h3 {
   line-height: 16px;
   color: #383838;
   border: none;
-  margin-tip: 20px;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=funnel.css.map */

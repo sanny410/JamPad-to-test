@@ -6,6 +6,97 @@ h2, h3 {
   margin: 0;
 }
 
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 56px;
+  box-sizing: border-box;
+
+  #logo {
+    width: 128px;
+    height: 24px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+
+      .menu-item {
+        list-style: none;
+        margin-right: 20px;
+        font-family: Yantramanav, serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        color: #383838;
+
+      }
+    }
+  }
+
+  .name-of-user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.open-vacancies-title {
+  display: grid;
+  grid-template-columns: 50% 40% 10%;
+  align-items: center;
+  margin-bottom: 10px;
+
+  input {
+    border: none;
+  }
+
+  input, textarea {outline:none;}
+  input:active, textarea:active {outline:none;}
+  :focus {outline:none;}
+  textarea {resize:none;}
+  textarea {resize:vertical;}
+  textarea {resize:horizontal;}
+
+  input[type=email]::placeholder,
+  input[type=password]::placeholder {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(56, 56, 56, 0.4);
+    margin: 4px 0;
+  }
+
+  #icon-lupa {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.funnel-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 16px;
+  color: #383838;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.funnel-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(56, 56, 56, 0.4);
+}
+
 .funnel-main {
   width: 100%;
   max-height: 1080px;
@@ -13,47 +104,6 @@ h2, h3 {
   grid-template-rows: 95px auto;
   font-family: Yantramanav, serif;
 
-  .header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 56px;
-    box-sizing: border-box;
-
-    #logo {
-      width: 128px;
-      height: 24px;
-    }
-
-    .menu {
-      display: flex;
-      justify-content: space-between;
-
-      a {
-        text-decoration: none;
-
-        .menu-item {
-          list-style: none;
-          margin-right: 20px;
-          font-family: Yantramanav, serif;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 18px;
-          text-align: left;
-          color: #383838;
-
-        }
-      }
-    }
-
-    .name-of-user {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-  }
 
   .score {
     font-style: normal;
@@ -81,23 +131,7 @@ h2, h3 {
   display: grid;
   grid-template-columns: 75% 25%;
 
-  .funnel-title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 16px;
-    color: #383838;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
 
-  .funnel-subtitle {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: rgba(56, 56, 56, 0.4);
-  }
 }
 
 .funnel-information {
@@ -322,36 +356,6 @@ h2, h3 {
     display: flex;
     flex-direction: column;
 
-    .open-vacancies-title {
-      display: grid;
-      grid-template-columns: 50% 40% 10%;
-      align-items: center;
-      margin-bottom: 10px;
-
-      input {
-        border: none;
-      }
-
-      input, textarea {outline:none;}
-      input:active, textarea:active {outline:none;}
-      :focus {outline:none;}
-      textarea {resize:none;}
-      textarea {resize:vertical;}
-      textarea {resize:horizontal;}
-
-      input[type=email]::placeholder,
-      input[type=password]::placeholder {
-        font-size: 12px;
-        line-height: 16px;
-        color: rgba(56, 56, 56, 0.4);
-        margin: 4px 0;
-      }
-
-      #icon-lupa {
-        width: 15px;
-        height: 15px;
-      }
-    }
 
     .vacancy-list-card {
       height: 48px;
@@ -397,7 +401,7 @@ h2, h3 {
       line-height: 16px;
       color: #383838;
       border: none;
-      margin-tip: 20px;
+      margin-top: 20px;
     }
   }
 

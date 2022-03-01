@@ -1,0 +1,88 @@
+.dashboard-main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  background: #F7F7F7;
+}
+
+.header {
+  max-height: 100px;
+  grid-area: 1/1/2/4;
+  opacity: 0.8;
+}
+
+.funnel {
+  grid-area: 2/1/6/3;
+  background-color: #F7F7F7;
+}
+
+.dashboard-about-vacancy {
+  grid-area: 1/3/6/4;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(56, 56, 56, 0.15);
+  border-radius: 40px 0 0 0;
+  padding: 96px 56px 58px 44px;
+}
+.dashboard-about-vacancy .vacancy-description {
+  margin-bottom: 89px;
+}
+.dashboard-about-vacancy .vacancy-description .funnel-subtitle {
+  margin-bottom: 4px;
+}
+.dashboard-about-vacancy .vacancy-description .funnel-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: Yantramanav, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+.dashboard-about-vacancy .vacancy-description .description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #383838;
+  margin-bottom: 16px;
+}
+.dashboard-about-vacancy .vacancy-description #save-changes-btn {
+  width: 100%;
+  height: 36px;
+  background: #FED614;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #383838;
+  border: none;
+}
+.dashboard-about-vacancy .open-vacancies-stages .stages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+.dashboard-about-vacancy .open-vacancies-stages .stages .stage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid rgba(56, 56, 56, 0.3);
+  box-sizing: border-box;
+  border-radius: 12px;
+  color: black;
+  padding: 15px 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.dashboard-about-vacancy .open-vacancies-stages .stages .stage .icon-stage {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=dashboard.css.map */
