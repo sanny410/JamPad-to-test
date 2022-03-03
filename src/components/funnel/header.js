@@ -10,7 +10,7 @@ import axios from "axios";
 const Header = () => {
 
     const dispatch = useDispatch();
-    const hrName = useSelector(state => state.hr_info);
+    const hrName = useSelector(state => state.funnel.hr_info);
     const {first_name, last_name} = hrName;
 
     const HRNameFetch = async()  => {
@@ -18,7 +18,7 @@ const Header = () => {
             .get('https://api.jampad.ml/api/hrs/', {
                 headers: {
                     'Accept': 'application/json',
-                    'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImhyQGdtYWlsLmNvbSIsImV4cCI6MTY1MjY0MjY4OX0.EAEH8rKIiwEcOTin2entjDDa6dHh6JHsqqhWeO24kZ8'
+                    'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImhyQGdtYWlsLmNvbSIsImV4cCI6MTY1NDExMjc4NH0.9H8LsfiAHytxnrKeEciOE_BfMFftFd8BIYarWYodu8Y'
                 }
             })
             .catch((err) => {
