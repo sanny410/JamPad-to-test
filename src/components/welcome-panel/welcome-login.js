@@ -4,7 +4,7 @@ import axios from "axios";
 import {Field, reduxForm} from "redux-form";
 import { useForm } from "react-hook-form";
 import {loginFetchData} from "../../store/actions";
-import {Navigate, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 
 
@@ -12,7 +12,7 @@ const LoginForm = (prop) => {
 
     const dispatch = useDispatch();
     const navigate = useNavigate()
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, formState: { errors } } = useForm();
 
     const loginPost = (email, password) => {
         axios.post('https://api.jampad.ml/api/hrs/login', {email: email, password: password})

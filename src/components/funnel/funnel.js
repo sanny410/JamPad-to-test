@@ -10,13 +10,11 @@ const Funnel = () => {
     return (
         <div className={"funnel-main"}>
             <Header />
-            {/*<div className={"funnel-main-page"}>*/}
                 <FunnelProgressStatistics />
                 <Leaderboard />
                 <Vacancies />
                 <OpenVacancies />
             </div>
-        // </div>
     )
 }
 

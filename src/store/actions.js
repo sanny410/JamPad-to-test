@@ -4,7 +4,6 @@ import {
     FUNNEL_STATISTICS,
     HR_INFO,
     LOGIN_FETCH_DATA,
-    OPEN_VACANCIES
 } from "./types";
 
 
@@ -40,12 +39,5 @@ export const FunnelStatisticsLoad = (stat) => {
     return {
         type: FUNNEL_STATISTICS,
         payload: stat
-    }
-}
-
-    export const openVacanciesLoad = (vacancies) => {
-    return {
-        type: OPEN_VACANCIES,
-        payload: vacancies
     }
 }

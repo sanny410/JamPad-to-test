@@ -3,7 +3,6 @@ import './funnel.scss'
 import {useDispatch, useSelector} from "react-redux";
 import axios from "axios";
 import {leaderFetchData, notLeaderFetchData} from "../../store/actions";
-import FunnelStatistics from "./funnelStatistics";
 
 function SortArraySuccessRateUp(prev, next) {
     return next['success_rate'] - prev['success_rate']
@@ -79,7 +78,7 @@ const Leaderboard  = () =>  {
                         </div>
                     </div>
                     <div>
-                        <img src={require("../../assets/funnel-image/frame.png")}/>
+                        <img src={require("../../assets/funnel-image/frame.png")} alt={""}/>
                     </div>
                 </div>
             </div>

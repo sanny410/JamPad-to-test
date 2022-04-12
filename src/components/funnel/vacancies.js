@@ -1,6 +1,5 @@
 import React from "react";
 import './funnel.scss'
-import OpenVacancies from "./open-vacancy";
 import Vacancy from "./vacancy-card";
 
 const Vacancies = () => {

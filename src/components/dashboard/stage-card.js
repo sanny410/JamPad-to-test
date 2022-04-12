@@ -2,11 +2,6 @@ import React from "react";
 import "../funnel/funnel.scss"
 import "./dashboard.scss"
 
-// type StageCard = {
-//     icon: string
-//     nameStage: string
-// }
-
 const StageCard = ({icon, nameStage }) => {
     return (
         <div className={"stage"}>
