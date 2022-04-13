@@ -15,7 +15,12 @@ const LoginForm = (prop) => {
     const { register, formState: { errors } } = useForm();
 
     const loginPost = (email, password) => {
-        axios.post('https://api.jampad.ml/api/hrs/login', {email: email, password: password})
+        axios.post('https://api.jampad.ml/api/hrs/login', {email: email, password: password}, {
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, POST, OPTIONS, PUT, DELETE"
+            }
+        })
             .then((response) => {
                 const token = response.data.token;
                 console.log(token)
